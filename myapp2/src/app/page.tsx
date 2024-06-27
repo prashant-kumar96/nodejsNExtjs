@@ -15,7 +15,7 @@ const HomePage = () => {
         const result = await response.json();
         console.log(result);
         setData(result.message);
-      } catch (error) {
+      } catch (error:any) {
         setError(error.message);
       } finally {
         setLoading(false);
