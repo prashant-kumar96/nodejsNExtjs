@@ -4,7 +4,7 @@ const app = express();
 app.use(cors());
 const PORT = 5000;
 
-app.get("/test", (req, res) => {
+app.get("/test", (req: any, res: any) => {
   res.setHeader("Content-Type", "application/json");
   res.status(200).json({ message: "HELLO THE TEST API IS RUNNING" });
 });
